@@ -8307,6 +8307,12 @@ button.swiper-pagination-bullet {
   background-color: white;
 
   opacity: 0.2;
+
+  -webkit-transition: 0.3s ease-in-out;
+
+  -o-transition: 0.3s ease-in-out;
+
+  transition: 0.3s ease-in-out;
 }
 
 .offer__image {
@@ -8533,6 +8539,26 @@ button.swiper-pagination-bullet {
 .promo__photo-item {
   pointer-events: auto !important;
   cursor: pointer;
+
+  outline: none;
+}
+
+.promo__photo-item:hover .promo__picture::before,
+.promo__photo-item:focus .promo__picture::before {
+  background-color: #c9a96a;
+
+  -webkit-box-shadow: inset 0 0 16px 8px #11181E;
+
+          box-shadow: inset 0 0 16px 8px #11181E;
+}
+
+.promo__photo-item:hover .promo__video-wrapper::before,
+.promo__photo-item:focus .promo__video-wrapper::before {
+  background-color: #c9a96a;
+
+  -webkit-box-shadow: inset 0 0 16px 8px #11181E;
+
+          box-shadow: inset 0 0 16px 8px #11181E;
 }
 
 .promo__photo-item--video {
