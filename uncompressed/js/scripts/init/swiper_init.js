@@ -92,6 +92,6 @@ function swiperInit() {
   })
 }
 
-if(!document.querySelector('.news')) {
+if(document.querySelector('.slider-init')) {
   swiperInit();
 }
