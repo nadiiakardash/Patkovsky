@@ -434,19 +434,10 @@ template {
 */
 
 @font-face {
-  font-family: "CormorantGaramond";
+  font-family: "CrimsonText";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/CormorantGaramond-Regular.woff2") format("woff2"), url("../fonts/CormorantGaramond-Regular.woff") format("woff");
-
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "EBGaramond";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/EBGaramond-Regular.woff2") format("woff2"), url("../fonts/EBGaramond-Regular.woff") format("woff");
+  src: url("../fonts/CrimsonText-Regular.woff2") format("woff2"), url("../fonts/CrimsonText-Regular.woff") format("woff");
 
   font-display: swap;
 }
@@ -4711,7 +4702,7 @@ button.swiper-pagination-bullet {
   margin-top: 0;
   margin-bottom: 0;
 
-  font-family: "EBGaramond";
+  font-family: "CrimsonText";
   font-size: 50px;
   line-height: 65px;
   color: #11181E;
@@ -5859,7 +5850,7 @@ button.swiper-pagination-bullet {
   height: 40px;
   margin-right: 20px;
 
-  fill: #11181E;
+  fill: transparent;
 }
 
 .footer {
@@ -7789,7 +7780,7 @@ button.swiper-pagination-bullet {
   padding-left: 18%;
   margin: 0;
 
-  font-family: "CormorantGaramond";
+  font-family: "CrimsonText";
   font-size: 28px;
   line-height: 34px;
   color: inherit;
