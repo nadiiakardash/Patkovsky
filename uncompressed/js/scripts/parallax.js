@@ -1,8 +1,8 @@
 function parallaxInit() {
-  let differentValue = 120;
+  let differentValue = 170;
 
   if(window.screen.width < 1440) {
-    differentValue = 75;
+    differentValue = 160;
   }
 
   const parallaxItem = document.querySelector('.parallax--deer');

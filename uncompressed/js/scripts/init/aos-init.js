@@ -1,11 +1,11 @@
-if (document.documentElement.clientWidth < 1199) {
+if (document.documentElement.clientWidth < 1440) {
   AOS.init({
-    duration: 2000,
+    duration: 900,
     offset: 0
   })
 } else {
   AOS.init({
-    duration: 2000,
+    duration: 900,
     offset: 100
   })
 }
