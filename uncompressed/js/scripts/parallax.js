@@ -1,5 +1,5 @@
 function parallaxInit() {
-  let differentValue = 170;
+  let differentValue = 180;
 
   if(window.screen.width < 1440) {
     differentValue = 160;
