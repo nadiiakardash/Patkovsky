@@ -7137,8 +7137,7 @@ button.swiper-pagination-bullet {
   margin-bottom: 6.5%;
 }
 
-.main--news,
-.main--promotions {
+.main--pages {
   padding-top: 239px;
 }
 
@@ -7246,6 +7245,11 @@ button.swiper-pagination-bullet {
   position: relative;
 
   margin-bottom: 8%;
+}
+
+.details__title span {
+  position: relative;
+  z-index: 10;
 }
 
 .details__title::after {
@@ -7842,7 +7846,7 @@ button.swiper-pagination-bullet {
 
   background-color: #FBFAF7;
   background-image: url("../img/svg/booking/calendar.svg");
-  background-position: left center;
+  background-position: left top 56%;
   background-repeat: no-repeat;
   background-size: 8%;
   border: none;
@@ -8001,6 +8005,11 @@ button.swiper-pagination-bullet {
   margin-left: auto;
 
   background-color: white;
+}
+
+.architecture__container span {
+  position: relative;
+  z-index: 10;
 }
 
 .architecture__container::after {
@@ -8498,6 +8507,11 @@ button.swiper-pagination-bullet {
   margin-bottom: 1.6%;
 }
 
+.promo__title span {
+  position: relative;
+  z-index: 10;
+}
+
 .promo__title::after {
   content: "";
   position: absolute;
@@ -8829,6 +8843,11 @@ button.swiper-pagination-bullet {
   margin-bottom: 1.7%;
 }
 
+.news__title span {
+  position: relative;
+  z-index: 10;
+}
+
 .news__title::after {
   content: "";
   content: 'Знижки';
@@ -9085,6 +9104,11 @@ button.swiper-pagination-bullet {
   font-family: "CormorantGaramond";
 }
 
+.promotions__title span {
+  position: relative;
+  z-index: 10;
+}
+
 .promotions__title::after {
   content: "";
   position: absolute;
@@ -9328,6 +9352,585 @@ button.swiper-pagination-bullet {
           align-items: center;
 }
 
+.contacts__title {
+  position: relative;
+
+  margin-bottom: 1.4%;
+}
+
+.contacts__title span {
+  position: relative;
+  z-index: 10;
+}
+
+.contacts__title::after {
+  content: "";
+  content: "Зв’язок";
+  position: absolute;
+  top: -122%;
+  left: 0;
+  z-index: 1;
+
+  display: block;
+
+  font-family: "CormorantGaramond";
+  font-size: 165px;
+  line-height: 120%;
+  color: #F1EDE1;
+}
+
+.contacts__line {
+  width: 34.5%;
+  margin-bottom: 1.8%;
+}
+
+.contacts__line--map {
+  width: 78%;
+}
+
+.contacts__container {
+  margin-bottom: 10.5%;
+}
+
+.contacts__navigation-list {
+  margin-bottom: 6.5%;
+}
+
+.contacts__line-image::after {
+  width: 91%;
+}
+
+.contacts__line-image--map::after {
+  width: 89%;
+}
+
+.contacts__button {
+  width: 100%;
+  min-width: 0;
+}
+
+.contacts__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+  width: 66.5%;
+  padding-top: 4%;
+}
+
+.contacts__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+
+  margin-bottom: 3.5%;
+}
+
+.contacts__wrapper--booking {
+  width: 35%;
+}
+
+.contacts__wrapper--contacts {
+  width: 33%;
+}
+
+.contacts__wrapper--reception {
+  width: 32%;
+}
+
+.contacts__details-wrapper {
+  position: relative;
+  z-index: 10;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+  margin-bottom: 4.6%;
+}
+
+.contacts__details-wrapper--map {
+  margin-bottom: 0;
+}
+
+.contacts__icon {
+  display: inline-block;
+
+  fill: #c9a96a;
+
+  -webkit-transition: 0.3s ease-in-out;
+
+  -o-transition: 0.3s ease-in-out;
+
+  transition: 0.3s ease-in-out;
+}
+
+.contacts__icon--map,
+.contacts__icon--message,
+.contacts__icon--phone {
+  margin-right: 15px;
+}
+
+.contacts__icon--map {
+  -webkit-animation: pulsate 2s ease-out;
+          animation: pulsate 2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.contacts__icon--phone {
+  -webkit-animation: phone-vibrate  5s ease infinite;
+          animation: phone-vibrate  5s ease infinite;
+}
+
+.contacts__place {
+  margin-bottom: 6%;
+}
+
+.contacts__email {
+  margin-bottom: 8%;
+}
+
+.contacts__place,
+.contacts__email,
+.contacts__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contacts__socials {
+  padding-left: 2%;
+  margin-bottom: 15%;
+}
+
+.contacts__inner {
+  width: 100%;
+  padding-left: 2%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-bottom: 8%;
+
+  font-size: 18px;
+  line-height: 20px;
+  color: #c9a96a;
+  text-transform: uppercase;
+}
+
+.contacts__phone-item {
+  margin-bottom: 2%;
+}
+
+.contacts__phone-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.contacts__email,
+.contacts__phone-link,
+.contacts__place {
+  outline: 0;
+
+  -webkit-transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+  -o-transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+  transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.contacts__email:active,
+.contacts__phone-link:active,
+.contacts__place:active {
+  opacity: 30%;
+}
+
+.contacts__email:hover,
+.contacts__email:focus,
+.contacts__phone-link:hover,
+.contacts__phone-link:focus,
+.contacts__place:hover,
+.contacts__place:focus {
+  color: #c9a96a;
+}
+
+.contacts__phones {
+  padding: 0;
+  padding-left: 13%;
+  margin: 0;
+
+  text-indent: 0;
+
+  list-style: none;
+}
+
+.contacts__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+  width: 100%;
+  padding-right: 4%;
+}
+
+.contacts__map {
+  position: relative;
+
+  width: 308px;
+  height: 308px;
+}
+
+.contacts__map-box {
+  position: absolute;
+  top: 21%;
+  right: 23%;
+
+  width: 100%;
+  height: 100%;
+
+  -webkit-transform: rotate(45deg);
+
+      -ms-transform: rotate(45deg);
+
+          transform: rotate(45deg);
+}
+
+.contacts__map-box::before {
+  content: "";
+  position: absolute;
+  top: 39%;
+  left: 51%;
+  z-index: 10;
+
+  display: block;
+
+  width: 46px;
+  height: 62px;
+
+  background-image: url("../img/svg/contacts/pin.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  -webkit-transform: rotate(-45deg) translate(-50%, -50%);
+
+      -ms-transform: rotate(-45deg) translate(-50%, -50%);
+
+          transform: rotate(-45deg) translate(-50%, -50%);
+}
+
+.contacts__map-image {
+  font-family: "object-fit: cover";
+
+  -o-object-fit: cover;
+
+     object-fit: cover;
+}
+
+.contacts__details-line {
+  position: absolute;
+  top: 15%;
+  left: 42%;
+
+  height: 79%;
+}
+
+.contacts__details-picture {
+  position: relative;
+
+  width: 38.9%;
+  max-height: 861px;
+}
+
+.contacts__details-picture::before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.contacts__details-image {
+  font-family: "object-fit: cover";
+
+  -o-object-fit: cover;
+
+     object-fit: cover;
+}
+
+.contacts__details-inner {
+  width: 53.3%;
+  padding-top: 8.7%;
+}
+
+.contacts__details-title {
+  position: relative;
+
+  margin-bottom: 5.6%;
+}
+
+.contacts__details-title span {
+  position: relative;
+  z-index: 10;
+}
+
+.contacts__details-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+
+  display: block;
+
+  font-family: "CormorantGaramond";
+  font-size: 165px;
+  line-height: 120%;
+  color: #F1EDE1;
+
+  -webkit-transform: translateX(-50%);
+
+      -ms-transform: translateX(-50%);
+
+          transform: translateX(-50%);
+}
+
+.contacts__details-title::after {
+  content: 'Логістика';
+  top: -117%;
+  left: -2%;
+
+  -webkit-transform: translate(0);
+
+      -ms-transform: translate(0);
+
+          transform: translate(0);
+}
+
+.contacts__details-title--ua::after,
+.contacts__details-title--map::after {
+  content: 'Мапа';
+}
+
+.contacts__details-title--map {
+  padding-left: 8.6%;
+  margin-bottom: 6%;
+}
+
+.contacts__details-title--map::after {
+  left: 6%;
+}
+
+.contacts__details-title span {
+  position: relative;
+  z-index: 10;
+}
+
+.contacts__details-title-box {
+  width: 32%;
+  padding-top: 14.6%;
+  padding-left: 1.9%;
+}
+
+.contacts__details-description {
+  padding-right: 26%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-bottom: 1.2%;
+}
+
+.contacts__details-description--main {
+  margin-bottom: 7%;
+}
+
+.contacts__price {
+  margin-bottom: 4.9%;
+
+  text-align: center;
+
+  background-color: #FBFAF7;
+}
+
+.contacts__price-wrapper {
+  width: 55%;
+  padding-top: 7.7%;
+  padding-bottom: 2.3%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contacts__price-title {
+  position: relative;
+
+  margin-bottom: 3.2%;
+}
+
+.contacts__price-title span {
+  position: relative;
+  z-index: 10;
+}
+
+.contacts__price-title::after {
+  content: "";
+  content: "Ціни";
+  position: absolute;
+  top: -120%;
+  left: 0;
+  z-index: 1;
+
+  display: block;
+
+  font-family: "CormorantGaramond";
+  font-size: 165px;
+  line-height: 120%;
+  color: #F1EDE1;
+}
+
+.contacts__price-title::after {
+  left: 50%;
+
+  -webkit-transform: translateX(-50%);
+
+      -ms-transform: translateX(-50%);
+
+          transform: translateX(-50%);
+}
+
+.contacts__price-line {
+  margin-bottom: 3%;
+}
+
+.contacts__price-description {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-bottom: 1%;
+}
+
+.contacts__price-description:last-of-type {
+  margin-bottom: 0;
+}
+
+.contacts__price-description--last {
+  margin-bottom: 6.7%;
+}
+
+.contacts__details-box {
+  position: relative;
+  z-index: 5;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+  width: 100%;
+  margin-top: -6.5%;
+
+  background-color: white;
+}
+
+.contacts__details-photo {
+  position: relative;
+
+  width: 57%;
+  height: 738px;
+  margin-left: auto;
+}
+
+.contacts__details-photo::before {
+  content: "";
+  position: absolute;
+
+  display: block;
+}
+
+.contacts__details-photo::before {
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 59%;
+  height: 17%;
+
+  background-color: white;
+}
+
+.contacts__details-photo-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  width: 100%;
+  height: 100%;
+}
+
+.contacts__details-photo-box::before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.contacts__details-photo-item {
+  font-family: "object-fit: cover";
+
+  -o-object-fit: cover;
+
+     object-fit: cover;
+}
+
+.contacts__square-link {
+  position: absolute;
+  bottom: 7.6%;
+  left: -134px;
+  z-index: 100;
+}
+
+.contacts__details-container {
+  margin-bottom: 7.2%;
+}
+
 @media (max-width: 1750px) {
   .offer__item {
     height: 544px;
@@ -9428,7 +10031,7 @@ button.swiper-pagination-bullet {
   }
 
   .header__box--fixed .header__logo {
-    width: 17%;
+    width: 19%;
   }
 
   .header__button {
@@ -9639,8 +10242,7 @@ button.swiper-pagination-bullet {
     padding-top: 100px;
   }
 
-  .main--news,
-  .main--promotions {
+  .main--pages {
     padding-top: 200px;
   }
 
@@ -9827,6 +10429,56 @@ button.swiper-pagination-bullet {
   .promotions__picture {
     height: 552px;
   }
+
+  .contacts__title::after {
+    font-size: 130px;
+  }
+
+  .contacts__details-title::after {
+    font-size: 130px;
+  }
+
+  .contacts__price-title::after {
+    font-size: 130px;
+  }
+
+  .contacts__inner {
+    font-size: inherit;
+    line-height: 110%;
+  }
+
+  .contacts__icon--map,
+  .contacts__icon--message,
+  .contacts__icon--phone {
+    margin-right: 10px;
+  }
+
+  .contacts__map {
+    width: 200px;
+    height: 200px;
+  }
+
+  .contacts__map-box::before {
+    width: 35px;
+    height: 50px;
+  }
+
+  .contacts__details-picture {
+    height: 690px;
+  }
+
+  .contacts__price-title::after {
+    top: -100%;
+  }
+
+  .contacts__details-photo {
+    height: 551px;
+  }
+
+  .contacts__square-link {
+    bottom: 8.2%;
+    left: -110px;
+  }
 }
 
 @media (max-width: 1439px) {
@@ -9918,7 +10570,7 @@ button.swiper-pagination-bullet {
   }
 
   .header__box--fixed .header__logo {
-    width: 14%;
+    width: 18%;
   }
 
   .header__container {
@@ -9932,10 +10584,6 @@ button.swiper-pagination-bullet {
 
   .header__label {
     margin-right: 40px;
-  }
-
-  .header__logo {
-    width: 17%;
   }
 
   .header__icon--weather {
@@ -10049,8 +10697,7 @@ button.swiper-pagination-bullet {
     height: 9px;
   }
 
-  .main--news,
-  .main--promotions {
+  .main--pages {
     padding-top: 175px;
   }
 
@@ -10235,6 +10882,52 @@ button.swiper-pagination-bullet {
 
   .promotions__box--socials {
     width: 38%;
+  }
+
+  .contacts__title::after {
+    font-size: 115px;
+  }
+
+  .contacts__details-title::after {
+    font-size: 115px;
+  }
+
+  .contacts__price-title::after {
+    font-size: 115px;
+  }
+
+  .contacts__map {
+    width: 175px;
+    height: 175px;
+  }
+
+  .contacts__button {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .contacts__details-picture {
+    height: 531px;
+  }
+
+  .contacts__price-line-image::after {
+    width: 94%;
+  }
+
+  .contacts__details-box {
+    margin-top: -55px;
+  }
+
+  .contacts__details-photo {
+    height: 458px;
+  }
+
+  .contacts__square-link {
+    left: -90px;
+  }
+
+  .contacts__line-image--map::after {
+    width: 87%;
   }
 }
 
@@ -10502,8 +11195,7 @@ button.swiper-pagination-bullet {
     display: none;
   }
 
-  .main--news,
-  .main--promotions {
+  .main--pages {
     padding-top: 140px;
   }
 
@@ -10763,6 +11455,79 @@ button.swiper-pagination-bullet {
   .promotions__socials-description {
     margin-bottom: 10px;
   }
+
+  .contacts__title::after {
+    font-size: 80px;
+  }
+
+  .contacts__details-title::after {
+    font-size: 80px;
+  }
+
+  .contacts__price-title::after {
+    font-size: 80px;
+  }
+
+  .contacts__box {
+    width: 69%;
+
+    font-size: 9px;
+  }
+
+  .contacts__items {
+    padding-right: 0;
+  }
+
+  .contacts__map {
+    width: 110px;
+    height: 110px;
+  }
+
+  .contacts__map-box::before {
+    top: 34%;
+    left: 53%;
+
+    width: 25px;
+    height: 40px;
+  }
+
+  .contacts__details-line {
+    top: 0;
+  }
+
+  .contacts__details-picture {
+    height: 336px;
+  }
+
+  .contacts__details-inner {
+    padding-top: 0;
+    padding-right: 0;
+  }
+
+  .contacts__details-title {
+    font-size: 24px;
+  }
+
+  .contacts__details-box {
+    margin-top: -40px;
+  }
+
+  .contacts__details-photo {
+    height: 291px;
+  }
+
+  .contacts__details-photo::before {
+    height: 15%;
+  }
+
+  .contacts__square-link {
+    bottom: 10%;
+    left: -70px;
+  }
+
+  .contacts__line-image--map::after {
+    width: 78%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -10985,7 +11750,7 @@ button.swiper-pagination-bullet {
   }
 
   .header__box--fixed .header__logo {
-    width: 60%;
+    width: 51%;
   }
 
   .header__item {
@@ -11334,9 +12099,8 @@ button.swiper-pagination-bullet {
             transform: translate(0) rotate(180deg);
   }
 
-  .main--news,
-  .main--promotions {
-    padding-top: 200px;
+  .main--pages {
+    padding-top: 90px;
   }
 
   .main__architecture {
@@ -11419,9 +12183,6 @@ button.swiper-pagination-bullet {
     position: static;
 
     height: 187px;
-  }
-
-  .details__photo-item {
     margin-bottom: 50px;
   }
 
@@ -12056,6 +12817,242 @@ button.swiper-pagination-bullet {
 
   .promotions__list {
     margin-bottom: 15px;
+  }
+
+  .contacts__title::after {
+    display: none;
+  }
+
+  .contacts__details-title::after {
+    display: none;
+  }
+
+  .contacts__price-title::after {
+    display: none;
+  }
+
+  .contacts__details-photo::before {
+    display: none;
+  }
+
+  .contacts {
+    font-size: 14px;
+  }
+
+  .contacts .submission {
+    padding-top: 0;
+  }
+
+  .contacts__wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .contacts__wrapper--booking,
+  .contacts__wrapper--reception {
+    margin-bottom: 30px;
+  }
+
+  .contacts__wrapper--contacts {
+    margin-bottom: 0;
+  }
+
+  .contacts__socials {
+    margin-bottom: 25px;
+  }
+
+  .contacts__place {
+    margin-bottom: 20px;
+  }
+
+  .contacts__email {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .contacts__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+    padding-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .contacts__phones {
+    padding-left: 0;
+  }
+
+  .contacts__phone-item {
+    margin-bottom: 10px;
+
+    font-size: 16px;
+  }
+
+  .contacts__description {
+    margin-bottom: 25px;
+
+    font-size: 14px;
+  }
+
+  .contacts__title {
+    margin-bottom: 5px;
+  }
+
+  .contacts__line {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contacts__box {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+
+  .contacts__items {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+    margin-bottom: 105px;
+  }
+
+  .contacts__map {
+    width: 175px;
+    height: 175px;
+  }
+
+  .contacts__map-box {
+    right: 0;
+  }
+
+  .contacts__map-box::before {
+    top: 40%;
+    left: 52%;
+  }
+
+  .contacts__details-wrapper {
+    margin-bottom: 25px;
+  }
+
+  .contacts__details-picture {
+    width: 100%;
+    height: 328px;
+    margin-bottom: 25px;
+  }
+
+  .contacts__details-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    width: 100%;
+  }
+
+  .contacts__details-title {
+    margin-bottom: 15px;
+  }
+
+  .contacts__details-title--map {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .contacts__details-description {
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .contacts__details-description--main {
+    margin-bottom: 20px;
+  }
+
+  .contacts__price-wrapper {
+    width: 100%;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+
+  .contacts__price-title {
+    margin-bottom: 10px;
+  }
+
+  .contacts__price-line {
+    margin-bottom: 15px;
+  }
+
+  .contacts__price-description {
+    margin-bottom: 10px;
+  }
+
+  .contacts__price-description--last {
+    margin-bottom: 20px;
+  }
+
+  .contacts__details-box {
+    margin-top: 0;
+  }
+
+  .contacts__details-photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+    width: 100%;
+    height: auto;
+  }
+
+  .contacts__details-photo-box {
+    position: static;
+
+    height: 187px;
+    margin-bottom: 50px;
+  }
+
+  .contacts__details-photo-box--map {
+    margin-bottom: 0;
+  }
+
+  .contacts__details-button {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .contacts__details-title-box {
+    width: 100%;
+    padding: 0;
+  }
+
+  .contacts__square-link {
+    font-size: 12px;
+  }
+
+  .contacts__details-container {
+    margin-bottom: 0;
   }
 }
 
