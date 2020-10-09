@@ -5184,6 +5184,8 @@ button.swiper-pagination-bullet {
 }
 
 .header--price {
+  height: 810px;
+
   background-image: url("../img/main/price/background.jpg");
 }
 
@@ -8765,6 +8767,7 @@ button.swiper-pagination-bullet {
 
 .submission {
   position: relative;
+  z-index: 100;
 
   padding-top: 7%;
 
@@ -8951,6 +8954,11 @@ button.swiper-pagination-bullet {
       align-self: flex-end;
 }
 
+.news {
+  position: relative;
+  z-index: 1;
+}
+
 .news__container {
   position: relative;
   z-index: 100;
@@ -8959,6 +8967,82 @@ button.swiper-pagination-bullet {
 .news__parallax-wrapper {
   height: 41.8%;
   max-height: 2291px;
+}
+
+.news__sub-picture {
+  display: block;
+
+  cursor: pointer;
+
+  outline: none;
+
+  -webkit-transition: 0.3s ease-in-out;
+
+  -o-transition: 0.3s ease-in-out;
+
+  transition: 0.3s ease-in-out;
+}
+
+.news__sub-picture:hover::after,
+.news__sub-picture:focus::after {
+  background-color: #c9a96a;
+
+  opacity: 0.5;
+}
+
+.news__sub-picture:hover .news__sub-image,
+.news__sub-picture:focus .news__sub-image {
+  width: 100.5%;
+  height: 100.5%;
+  max-width: 100.5%;
+  max-height: 100.5%;
+}
+
+.news__sub-picture::after {
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.news__sub-image {
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.news__picture {
+  display: block;
+
+  overflow: hidden;
+
+  outline: none;
+
+  -webkit-transition: 0.3s ease-in-out;
+
+  -o-transition: 0.3s ease-in-out;
+
+  transition: 0.3s ease-in-out;
+}
+
+.news__picture:hover::after,
+.news__picture:focus::after {
+  background-color: #c9a96a;
+
+  opacity: 0.5;
+}
+
+.news__picture:hover .news__image,
+.news__picture:focus .news__image {
+  width: 100.5%;
+  height: 100.5%;
+  max-width: 100.5%;
+  max-height: 100.5%;
+}
+
+.news__image {
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .news__navigation-list {
@@ -10196,6 +10280,8 @@ button.swiper-pagination-bullet {
 .gallery__icon {
   margin-right: 15px;
 
+  fill: #576470;
+
   -webkit-transition: 0.3s ease-in-out;
 
   -o-transition: 0.3s ease-in-out;
@@ -11407,6 +11493,10 @@ button.swiper-pagination-bullet {
     height: 80px;
   }
 
+  .header--price {
+    height: 607px;
+  }
+
   .header__box {
     min-height: 125px;
   }
@@ -12041,6 +12131,10 @@ button.swiper-pagination-bullet {
     padding-bottom: 0;
   }
 
+  .header--price {
+    height: 504px;
+  }
+
   .header__box {
     min-height: 0;
   }
@@ -12550,6 +12644,10 @@ button.swiper-pagination-bullet {
     padding-right: 16px;
     padding-bottom: 10px;
     padding-left: 10px;
+  }
+
+  .header--price {
+    height: 323px;
   }
 
   .header__button {
