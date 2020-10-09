@@ -1,6 +1,5 @@
-function initVideoControl(video, button) {
-  const videoButton = document.querySelectorAll(`.${button}`);
-  let videoPlay = true;
+function initVideoControl(video, buttonSelector) {
+  const videoButton = document.querySelectorAll(`.${buttonSelector}`);
 
   if(!videoButton) {
     return;
@@ -8,21 +7,20 @@ function initVideoControl(video, button) {
 
   videoButton.forEach(button => {
     button.addEventListener('click', event => {
-      const target = event.target.closest('section');
+      const target = event.target.closest('.video-box');
       const videoItem = target.querySelector(`.${video}`);
 
-      if(videoPlay) {
-        button.classList.remove('video__button--paused');
+
+      if(button.classList.contains(`${buttonSelector}--paused`)) {
+        button.classList.remove(`${buttonSelector}--paused`);
         videoItem.pause();
-        videoPlay = false;
       } else {
-        button.classList.add('video__button--paused');
+        button.classList.add(`${buttonSelector}--paused`);
         videoItem.play();
-        videoPlay = true;
       }
     })
   })
 }
 
 initVideoControl('video__item','video__button');
-// initVideoControl('promo__video','promo__video-button');
+initVideoControl('gallery__video','gallery__video-button');
